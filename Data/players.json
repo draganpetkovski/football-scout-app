@@ -1,0 +1,124 @@
+[
+  {
+    "id": 34219490,
+    "rank": 1,
+    "player": "Lamine Yamal",
+    "club": "FC Barcelona",
+    "age": 18,
+    "position": "Right Winger",
+    "market_value_eur": 200000000,
+    "image": "./img/yamal.png"
+  },
+  {
+    "id": 34169116,
+    "rank": 2,
+    "player": "Erling Haaland",
+    "club": "Manchester City",
+    "age": 25,
+    "position": "Centre-Forward",
+    "market_value_eur": 200000000,
+    "image": "./img/haaland.png"
+  },
+  {
+    "id": 34162098,
+    "rank": 3,
+    "player": "Kylian Mbappé",
+    "club": "Real Madrid",
+    "age": 27,
+    "position": "Centre-Forward",
+    "market_value_eur": 200000000,
+    "image": "./img/mbappe.png"
+  },
+  {
+    "id": 34172243,
+    "rank": 4,
+    "player": "Pedri",
+    "club": "FC Barcelona",
+    "age": 23,
+    "position": "Central Midfield",
+    "market_value_eur": 150000000,
+    "image": "./img/pedri.png"
+  },
+  {
+    "id": 34161324,
+    "rank": 5,
+    "player": "Vinicius Junior",
+    "club": "Real Madrid",
+    "age": 25,
+    "position": "Left Winger",
+    "market_value_eur": 150000000,
+    "image": "./img/vinicius.png"
+  },
+  {
+    "id": 34171882,
+    "rank": 6,
+    "player": "Jude Bellingham",
+    "club": "Real Madrid",
+    "age": 22,
+    "position": "Attacking Midfield",
+    "market_value_eur": 140000000,
+    "image": "./img/bellingham.png"
+  },
+  {
+    "id": 34172857,
+    "rank": 7,
+    "player": "Michael Olise",
+    "club": "Bayern Munich",
+    "age": 24,
+    "position": "Right Winger",
+    "market_value_eur": 140000000,
+    "image": "./img/olise.png"
+  },
+  {
+    "id": 34173035,
+    "rank": 8,
+    "player": "Jamal Musiala",
+    "club": "Bayern Munich",
+    "age": 23,
+    "position": "Attacking Midfield",
+    "market_value_eur": 120000000,
+    "image": "./img/musiala.png"
+  },
+  {
+    "id": 34169884,
+    "rank": 9,
+    "player": "Bukayo Saka",
+    "club": "Arsenal FC",
+    "age": 24,
+    "position": "Right Winger",
+    "market_value_eur": 120000000
+  },
+  {
+    "id": 34161584,
+    "rank": 10,
+    "player": "Declan Rice",
+    "club": "Arsenal FC",
+    "age": 27,
+    "position": "Central Midfield",
+    "market_value_eur": 120000000
+  },
+  {
+    "rank": "N/A",
+    "player": "Lionel Messi",
+    "club": "Inter Miami CF",
+    "age": 38,
+    "position": "Right Winger",
+    "market_value_eur": 15000000
+  },
+  {
+    "rank": "N/A",
+    "player": "Cristiano Ronaldo",
+    "club": "Al-Nassr FC",
+    "age": 41,
+    "position": "Centre-Forward",
+    "market_value_eur": 12000000
+  },
+  {
+    "rank": "N/A",
+    "player": "Neymar",
+    "club": "Santos FC",
+    "age": 34,
+    "position": "Attacking Midfield",
+    "market_value_eur": 10000000
+  }
+]

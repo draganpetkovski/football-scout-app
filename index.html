@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Scout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>⚽ Football Scout</h1>
+
+      <div class="header">
+        <img src="logo.png" class="logo" />
+
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchBar"
+            placeholder="Search players, teams..."
+          />
+        </div>
+
+        <div class="nav-bar">
+          <div class="item" id="home">Home</div>
+          <div class="item" id="clubs">Clubs</div>
+          <div class="item" id="players">Players</div>
+          <div class="item">Competitions</div>
+        </div>
+      </div>
+    </header>
+
+    <main class="home-container">
+      <!-- LEFT -->
+      <aside>
+        <ul class="favourite-competitions">
+          <li><h3>⭐ Favourite Competitions</h3></li>
+          <li>Champions League</li>
+          <li>Premier League</li>
+          <li>LaLiga</li>
+          <li>Bundesliga</li>
+          <li>Serie A</li>
+        </ul>
+      </aside>
+
+      <!-- CENTER NEWS -->
+      <section class="news-feed"></section>
+
+      <!-- RIGHT PLAYERS -->
+      <aside class="player-cards-container"></aside>
+    </main>
+    <main class="players-section-container"></main>
+    <script src="script.js"></script>
+  </body>
+</html>

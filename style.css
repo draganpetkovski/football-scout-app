@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #eef2ff;
+  color: #111827;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+  padding: 20px 50px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* LOGO */
+.logo {
+  width: 80px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* NAV */
+.nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.item {
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.item:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* SEARCH */
+#searchBar {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  outline: none;
+  width: 180px;
+  transition: 0.3s;
+}
+
+#searchBar:focus {
+  width: 240px;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* LAYOUT */
+.home-container {
+  display: grid;
+  grid-template-columns: 220px 1fr 280px;
+  gap: 25px;
+  padding: 20px 60px;
+}
+
+/* LEFT MENU */
+.favourite-competitions {
+  list-style: none;
+  background: white;
+  padding: 15px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.favourite-competitions li {
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.favourite-competitions li:hover {
+  background: #eef2ff;
+}
+
+/* NEWS */
+.news-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item-news {
+  background: white;
+  padding: 14px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: 0.2s;
+}
+
+.item-news:hover {
+  transform: translateY(-3px);
+}
+
+.item-news h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.item-news p {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* PLAYERS */
+.player-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 12px;
+
+  background: #0f172a;
+  border-radius: 14px;
+  border: 1px solid #1f2937;
+
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* PLAYER CARD (LIST ITEM STYLE) */
+.player-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: #111827;
+  padding: 10px 12px;
+  /* border-radius: 12px; */
+
+  border: 1px solid #1f2937;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+
+  color: #e5e7eb; /* 🔥 IMPORTANT FIX */
+}
+.player-card:hover {
+  transform: translateX(6px);
+  border-left: 3px solid #60a5fa;
+  background: #0b1220;
+}
+
+/* IMAGE */
+.player-img img {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 8px; /* 🔥 KOЦКА, не круг */
+  object-fit: contain;
+  border: 1px solid #1f2937;
+}
+
+/* TEXT */
+.player-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.player-meta {
+  font-size: 11px;
+  color: #94a3b8;
+}
+.player-card:hover .player-img img {
+  transform: scale(1.25);
+}
+.item.active {
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+}
