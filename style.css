@@ -5,10 +5,11 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #eef2ff;
-  color: #111827;
-  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top, rgba(59, 130, 246, 0.15), transparent 40%),
+    linear-gradient(135deg, #020617, #0b1220, #0f172a);
+
+  color: #e5e7eb;
 }
 
 /* HEADER */
@@ -20,6 +21,7 @@ header h1 {
   text-align: center;
   font-size: 28px;
   margin-bottom: 15px;
+  color: #e5e7eb;
 }
 
 .header {
@@ -44,6 +46,7 @@ header h1 {
 .nav-bar {
   display: flex;
   gap: 20px;
+  color: #e5e7eb; /* светло сива за читливост */
 }
 
 .item {
@@ -200,4 +203,452 @@ header h1 {
   background: #2563eb;
   color: white;
   border-radius: 8px;
+}
+.player-card,
+.team-card,
+.item-news {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  color: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.item {
+  color: #cbd5e1;
+  transition: 0.2s;
+}
+
+.item:hover {
+  color: #60a5fa;
+  transform: scale(1.05);
+}
+
+.item.active {
+  color: white;
+  background: rgba(37, 99, 235, 0.3);
+  border-radius: 8px;
+}
+.item-news {
+  border-left: 4px solid #2563eb;
+}
+
+.player-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  padding: 12px;
+  background: #0f172a;
+  border-radius: 14px;
+  border: 1px solid #1f2937;
+
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* FULL ROW CARD */
+.player-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  padding: 8px 10px;
+  border-radius: 8px;
+
+  background: #111827;
+  border: 1px solid #1f2937;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* hover effect */
+.player-card:hover {
+  transform: translateX(3px);
+  background: #0b1220;
+  border-left: 3px solid #60a5fa;
+}
+
+/* LEFT SIDE (image + name block) */
+.player-img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-img img {
+  width: 38px;
+  height: 38px;
+  border-radius: 6px;
+  /* object-fit: cover; */
+  border: 1px solid #1f2937;
+}
+
+/* TEXT */
+.player-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #e5e7eb;
+  white-space: nowrap;
+}
+
+/* META (age + club in same line style) */
+.player-meta {
+  font-size: 11px;
+  color: #94a3b8;
+  white-space: nowrap;
+}
+
+/* make p inline feel */
+.player-card p {
+  margin: 0;
+}
+
+/* optional: force tight layout */
+.player-card > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.player-card {
+  overflow: hidden;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.player-meta,
+.player-name {
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+.player-card:nth-child(even) {
+  background: #0f172a;
+}
+
+.player-card:nth-child(odd) {
+  background: #111827;
+}
+.player-card {
+  background: rgba(17, 24, 39, 0.9);
+}
+
+.player-card:nth-child(even) {
+  background: rgba(30, 41, 59, 0.6);
+}
+.player-card:hover {
+  background: #1f2937;
+}
+.player-cards-container::before {
+  content: 'MOST VALUABLE PLAYERS IN THE WORLD';
+  display: block;
+
+  font-size: 12px;
+  font-weight: 700;
+  color: #cbd5e1;
+
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hidden {
+  display: none;
+}
+
+/* 
+
+.player-info-card {
+  width: 300px;
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  border-radius: 18px;
+
+  background: #0f172a;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+
+  color: #e5e7eb;
+
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+
+  transition: 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hover effect */
+
+.players-section-container {
+  display: grid;
+
+  grid-template-columns: 320px 1fr 320px;
+  gap: 20px;
+
+  padding: 20px 50px;
+  align-items: start;
+}
+
+.player-info-card {
+  background: #0f172a;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+
+  color: #e5e7eb;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+.player-info span {
+  color: #94a3b8;
+}
+
+.player-info p {
+  color: #e5e7eb;
+}
+.player-profile span {
+  color: #60a5fa;
+}
+.player-info-card {
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  padding: 18px;
+
+  background: var(--card);
+  border: 1px solid rgba(96, 165, 250, 0.2);
+
+  border-radius: 18px;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+
+  transition: 0.3s ease;
+}
+/* .player-info-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(96, 165, 250, 0.5);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7);
+} */
+.player-profile img {
+  width: 220px;
+  height: 220px;
+
+  /* object-fit: cover; */
+  /* border-radius: 18px; */
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+.player-profile {
+  text-align: center;
+}
+
+.player-profile h3 {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.player-profile span {
+  font-size: 12px;
+  color: var(--accent);
+}
+.player-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.player-info p {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 8px 10px;
+
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+
+  color: var(--text);
+}
+
+.player-info span {
+  color: var(--muted);
+}
+.career-card {
+  width: 320px;
+
+  padding: 18px;
+  border-radius: 16px;
+
+  background: #0f172a;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+
+  color: #e5e7eb;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  transition: 0.3s ease;
+}
+
+.career-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.6);
+}
+
+/* HEADER */
+.career-header h3 {
+  font-size: 16px;
+  text-align: center;
+  color: #60a5fa;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* SECTION TITLES */
+.career-clubs h4,
+.career-stats h4 {
+  font-size: 13px;
+  margin-bottom: 8px;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+/* CLUBS */
+.career-clubs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.club-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 8px 10px;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.year {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.club {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+/* STATS */
+.career-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 8px 10px;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.stat span:first-child {
+  color: #94a3b8;
+}
+
+.stat span:last-child {
+  color: #60a5fa;
+  font-weight: 600;
+}
+
+.player-info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  padding: 18px;
+  border-radius: 16px;
+
+  background: #0f172a;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+
+  color: #e5e7eb;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+.player-description {
+  padding: 18px;
+  border-radius: 16px;
+
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+
+  color: #e5e7eb;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+
+  transition: 0.3s ease;
+}
+
+.player-description:hover {
+  transform: translateY(-5px);
+}
+.club-item {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 8px 10px;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.04);
+}
+.stat {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 8px 10px;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.stat span:last-child {
+  color: #60a5fa;
+  font-weight: 600;
 }
